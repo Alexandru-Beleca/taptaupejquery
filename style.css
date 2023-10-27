@@ -1,0 +1,155 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px;
+    background-color: #333;
+    color: #fff;
+    cursor: none;
+    
+}
+
+h1 {
+    margin: 20px;
+    text-align: center
+}
+#wrap {
+    width: 1000px;
+    margin: 0px auto;
+    border-style: solid;
+    border-radius: 20px;
+    border-width: 2px;
+    background-color: darkgreen;
+    z-index: 1;
+
+}
+.gamewrap {
+    width: 700px;
+    height: 500px;
+    margin: 50px auto;
+    border-style: solid;
+    border-width: 2px 0px 2px 0px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: darkgreen;
+    overflow: hidden;
+    text-align: center;
+    z-index: 1;
+}
+
+.splashwrap {
+    width: 80%;
+    height: 500px;
+    margin: 0px auto;
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: top center;
+    z-index: 1;
+}
+.splashdirt {
+    width: 80%;
+    margin-left: 100px;
+    height: 400px;
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    z-index: 1;
+}
+
+.scorewrap {
+    float: right;
+    width: 200px;
+    margin: 20px;
+    font-size: 30px;
+}
+
+.score {
+    padding: 5px 10px 5px 10px;
+    background-color: black;
+}
+.timerwrap {
+    float: left;
+    width: 200px;
+    margin: 20px;
+    font-size: 30px;
+}
+.timer {
+    padding: 5px 10px 5px 10px;
+    background-color: black;
+}
+
+.message {
+    width: 300px;
+    height: 50px;
+    margin: 10px auto;
+    font-size: 40px;
+    text-align: center;
+}
+
+#startwrap {
+    width: auto;
+    height: 50px;
+    margin: 20px;
+
+}
+#start {
+    width: 150px;
+    height: 50px;
+    margin: 0px auto;
+    display: block;
+}
+
+.hole {
+    display: inline-block;
+    margin: 5px 20px 5px 30px;
+    width: 20%;
+    height: 150px;
+    overflow: hidden;
+    position: relative;
+    background-color: rgb(165, 85, 11);
+    border-radius: 50%;
+    box-shadow: inset 0 10px 0 7px rgb(53, 21, 6),
+                inset 0 20px 20px 15px rgba(0, 0, 0, .3),
+                0 0 5px rgba(0, 0, 0, .5);
+    z-index: 1;
+}
+
+.mole {
+    width: 100%;
+    height: 110px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('assets/mole.png');
+    z-index: 1;
+    position: absolute;
+    background-position: center;
+    bottom: -150px;
+}
+
+.wack {
+    width: 100%;
+    height: 200px;
+    margin-top: 0px;
+    position: relative;
+    display: none;
+    z-index: 1;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('assets/wack.png');
+    background-position: center;
+}
+.cursor{
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    background-image: url('assets/hammer.png');
+    background-size: 100% 100%;
+    transform: translate(-20%, -20%);
+    transition: transform .1s;
+    pointer-events: none;
+    z-index: 1;
+}
+.cursor.active{
+    transform: translate(-20%, -20%) rotate(-45deg);
+    z-index: 1;
+}
